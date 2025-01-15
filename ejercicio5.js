@@ -11,7 +11,7 @@ function rollDice(diceFaces) {
     return result;
 }
 
-console.log(rollDice(6));
+console.log(rollDice(10));
 
 
 // En esta función uso el Math.floor para redondear y no me salga decimal. Sumo 1 ya que math floor siempre redondea a la baja, sin sumarle 1 me va a devolver siempre entre 0 y diceFaces -1;

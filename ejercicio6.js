@@ -22,4 +22,4 @@ const fantasticFour = [
     }
     
   }
-  console.log(swap(fantasticFour,4, 3));
+  console.log(swap(fantasticFour,0, 3));
