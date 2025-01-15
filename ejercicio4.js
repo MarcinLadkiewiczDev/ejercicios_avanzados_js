@@ -36,8 +36,13 @@ Finalmente retorna el array.
 De nuevo haz varios ejemplos para practicar y comprueba que funcionan correctamente. */
 
 function removeItem(array, text) {
-    array.splice((findArrayIndex(array, text)),1);
+    if(array.includes(text)){
+        array.splice((findArrayIndex(array, text)),1);
     return array;
+    } else {
+        return `La palabra ${text} no está en el array.`
+    }
+    
 }
 
 console.log(removeItem(mainCharacters, "Obi-Wan"));
