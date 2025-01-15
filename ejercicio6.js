@@ -12,9 +12,14 @@ const fantasticFour = [
   ];
 
   function swap(array, index1, index2){
-    let tmp = array[index1];
+    if(index1 < array.length && index2 < array.length && (index1, index2) >= 0){
+      let tmp = array[index1];
     array[index1] = array[index2];
     array[index2] = tmp;
     return array;
+    } else {
+      return "Parametros fuera de rango."
+    }
+    
   }
-  console.log(swap(fantasticFour,1, 2));
+  console.log(swap(fantasticFour,4, 3));
